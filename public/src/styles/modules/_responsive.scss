@@ -4,7 +4,7 @@
     .navmenu{
         position:absolute;
         flex-direction: column;
-        left:17rem;
+        left:16.5rem;
         background-color: $primary-brand-bg;
         height: 70vh;
         width: 7rem;
@@ -22,13 +22,13 @@
         display:none;
     }
     .show{
-        transform: translateX(110%);
+        transform: translateX(115%);
         transition: transform .5s ease-in;
     }
 }
 
 
-@media only screen and (max-width:500px){
+@media only screen and (max-width:400px){
     .artist{
         display:block !important; 
         .content{
@@ -39,7 +39,10 @@
                 font-size: 0.8rem;
             }
         }
-
+    }
+    .show{
+        transform: translateX(-60%);
+        transition: transform .5s ease-in;
     }
         
     }
