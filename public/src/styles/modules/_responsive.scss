@@ -1,0 +1,30 @@
+/* RESPONSIVE */
+
+@media only screen and (max-width:600px){
+    .navmenu{
+        position:absolute;
+        flex-direction: column;
+        left:17rem;
+        background-color: $primary-brand-bg;
+        height: 70vh;
+        width: 7rem;
+        margin-top:2rem;
+        transform: translateX(300%);
+    }
+    .bars{
+        display:block !important;
+        font-size: 1.4rem;
+        grid-column: 8/8;
+        margin-left: 12rem;
+        cursor:pointer;
+    }
+    .shopping{
+        display:none;
+    }
+    .show{
+        transform: translateX(110%);
+        transition: transform .5s ease-in;
+    }
+}
+
+/* RESPONSIVE END */
